@@ -1,6 +1,8 @@
 #include <sys/types.h>
 #include <signal.h>
-main(int argc, char **argv)
+#include <stdio.h>
+#include <stdlib.h>
+void main(int argc, char **argv)
 {
     int pid;
 

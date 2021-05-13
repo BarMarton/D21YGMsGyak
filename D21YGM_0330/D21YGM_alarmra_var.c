@@ -1,12 +1,11 @@
 #include <unistd.h>
 #include <signal.h>
+#include <stdio.h>
 void do_nothing();
-main ()
+void main ()
 {
-
-
     signal(SIGALRM, do_nothing);
-    printf("%d Várok\n");
+    printf("%d Várok\n", getpid());
     pause();
         printf("Végre, itt az alarm \n");
 }
